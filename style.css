@@ -1,0 +1,27 @@
+body {
+    background-color: aquamarine;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.button {
+    padding: 10px;
+    flex-basis: 25%;
+    border: 2px solid;
+}
+
+.container {
+    background-color: azure;
+    width: 300px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#displayNumber {
+    text-align: right;
+    padding-right: 2%;
+    border: 2px solid;
+}
