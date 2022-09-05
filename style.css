@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: orange;
 }
 
 .flex-container {
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    background-color: azure;
+    background-color: aliceblue;
     width: 300px;
     margin-top: 50px;
     margin-right: auto;
@@ -23,5 +23,5 @@ body {
 #displayNumber {
     text-align: right;
     padding-right: 2%;
-    border: 2px solid;
+    border: 3px solid;
 }
