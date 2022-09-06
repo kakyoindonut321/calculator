@@ -1,3 +1,8 @@
+var i = 0;
+
+function newOP(op) {
+    document.querySelector("#opDisplay").innerText = op;
+}
 const calculator = {
     displayNumber: '0',
     operator: null,
@@ -24,6 +29,31 @@ function inputDigit(digit) {
     }
 }
 
+function loopin() {
+    while (i < 10) {
+        clearCalculator();
+        updateDisplay();
+        i++;
+    }
+}
+/*  kode main-main
+    async function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function testloop() {
+    let i = 0;
+    do {
+        await sleep(100).then(() => {
+            performCalculation();
+            updateDisplay();
+        });
+        i++;
+    } while (i < 100);
+}
+ **/
+
+
 const buttons = document.querySelectorAll(".button");
 // console.log(buttons)
 for (let button of buttons) {
@@ -35,15 +65,18 @@ for (let button of buttons) {
         if (target.classList.contains('clear')) {
             clearCalculator();
             updateDisplay();
+            newOP("?")
             return;
         }
 
         if (target.classList.contains('operator')) {
             handleOperator(target.innerText);
+            newOP(target.innerText);
             return;
         }
 
         if (target.classList.contains('equals')) {
+            //testloop()
             performCalculation();
             updateDisplay();
             return;

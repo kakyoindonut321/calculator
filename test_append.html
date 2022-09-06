@@ -9,9 +9,24 @@
 </head>
 
 <body>
-    <!-- <h1 id="appedh1">0</h1> -->
-    <!-- <button id="newAppend">aaa</button> -->
+    <h1 id="testloop">0</h1>
+    <button id="newAppend" onclick="testloop()">aaa</button>
+    <script>
+        async function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
 
+        async function testloop() {
+            let i = 0;
+            do {
+                await sleep(50).then(() => {
+                    console.log(i);
+                    document.getElementById("testloop").innerHTML = i;
+                });
+                i++;
+            } while (i < 100);
+        }
+    </script>
 </body>
 
 </html>

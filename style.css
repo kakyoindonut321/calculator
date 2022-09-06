@@ -1,5 +1,6 @@
 body {
     background-color: orange;
+    background-image: linear-gradient(to right, orangered, orange, violet);
 }
 
 .flex-container {
@@ -7,21 +8,68 @@ body {
 }
 
 .button {
-    padding: 10px;
+    background-color: aliceblue;
+    padding: 20px;
     flex-basis: 25%;
-    border: 2px solid;
+    border: 3px solid;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+.button:active {
+    background-color: rgb(233, 233, 233);
 }
 
 .container {
-    background-color: aliceblue;
-    width: 300px;
+    width: 320px;
     margin-top: 50px;
+    margin-top: 10%;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 5px;
+}
+
+.insidecon {
+    border: 5px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.insideAgain {
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: black;
 }
 
 #displayNumber {
     text-align: right;
-    padding-right: 2%;
-    border: 3px solid;
+    padding-right: 3%;
+    flex-basis: 100%;
+    padding: 10px;
+    border: 2px solid;
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 100%;
+}
+
+#opDisplay {
+    text-align: center;
+    padding-right: 3%;
+    flex-basis: 10%;
+    border: 2px solid;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.display {
+    border: 2px solid;
+    display: flex;
+    background-color: black;
 }
