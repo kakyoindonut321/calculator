@@ -1,6 +1,7 @@
 body {
     background-color: orange;
     background-image: linear-gradient(to right, orangered, orange, violet);
+    overflow: hidden;
 }
 
 .flex-container {
