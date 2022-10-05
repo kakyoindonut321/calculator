@@ -15,6 +15,7 @@ for (let button of buttons) {
                 return;
             }
             operation(display);
+            display = document.querySelector(".display").innerText;
             return;
         }
         if (target.classList.contains('operator')) {
